@@ -40,7 +40,7 @@ p(sPTB) = 1 / {1 + exp[-(-0.95505271
          + 0.03004814 × B2M)]}
 ```
 
-> **Research use only:** This model has not been prospectively validated and must not be used for clinical diagnosis or decision-making.
+> **Research use only:** This model was developed for research and methodological evaluation. It has not been prospectively validated for clinical use and should not be used for diagnosis, treatment decisions, or individual patient risk assessment.
 
 Data availability
 
