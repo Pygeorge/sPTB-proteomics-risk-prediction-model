@@ -10,12 +10,12 @@ The repository contains the analysis scripts, the processed proteomic matrix use
 | `data/proteome.txt`                                 | Processed sample-level clinical and proteomic data. The first columns contain sample metadata; subsequent columns contain protein measurements. |
 | `model/LR_final.pkl`                                | Serialized final logistic-regression model.                  |
 | `#model_construction_and_evaluation.py`             | Main Python workflow for model construction, prediction, ROC/precision–recall analysis, subgroup analysis, calibration-related evaluation, and fixed-threshold performance. |
-| `#model_construction_and_evaluation_GWS_and_GWD.py` | Evaluation for alternative gestational-week sampling and delivery definitions. |
+| `#model_construction_and_evaluation_GWS_and_GWD.py` | Evaluation for gestational-week sampling and delivery definitions. |
 | `#CL_model_construction_and_evaluation.py`          | Workflow for evaluating the model with cervical-length measurements. |
 | `jackknifing.py`                                    | Jackknife and differential-expression utilities.             |
 | `EN.R`                                              | Elastic-net model selection and leave-one-out evaluation in R. |
-| `elbow_point.py`                                    | Knee/elbow-point analysis for selecting the number of proteins. |
-| `UMAP.py`                                           | UMAP visualization of proteomic profiles.                    |
+| `elbow_point.py`                                    | Elbow-point analysis for selecting the number of proteins. |
+| `UMAP.py`                                           | UMAP visualization of MCH1 proteomic profiles.                    |
 | `composite_score_function.py`                       | Composite ranking function for candidate protein prioritization. |
 | `LICENSE`                                           | Repository license.                                          |
 
