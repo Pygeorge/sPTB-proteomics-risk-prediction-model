@@ -42,7 +42,7 @@ p(sPTB) = 1 / {1 + exp[-(-0.95505271
 
 > **Research use only:** This model was developed for research and methodological evaluation. It has not been prospectively validated for clinical use and should not be used for diagnosis, treatment decisions, or individual patient risk assessment.
 
-Data availability
+## Data availability
 
 Primary proteomics data are available through the iProX repository under accession `IPX0008492002` 
 
