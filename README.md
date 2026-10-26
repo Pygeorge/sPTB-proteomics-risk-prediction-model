@@ -1,2 +1,40 @@
 # sPTB-proteomics-risk-prediction-model
-PTB proteomics project
+Code and supporting files for the development and evaluation of a cervicovaginal-fluid (CVF) proteomics-based model for spontaneous preterm birth (sPTB) risk prediction.
+
+The repository contains the analysis scripts, the processed proteomic matrix used by the model, and the fitted logistic-regression model for reproducibility and further methodological evaluation.
+
+## Repository contents
+
+| File or directory                                   | Description                                                  |
+| --------------------------------------------------- | ------------------------------------------------------------ |
+| `data/proteome.txt`                                 | Processed sample-level clinical and proteomic data. The first columns contain sample metadata; subsequent columns contain protein measurements. |
+| `model/LR_final.pkl`                                | Serialized final logistic-regression model.                  |
+| `#model_construction_and_evaluation.py`             | Main Python workflow for model construction, prediction, ROC/precision–recall analysis, subgroup analysis, calibration-related evaluation, and fixed-threshold performance. |
+| `#model_construction_and_evaluation_GWS_and_GWD.py` | Evaluation for alternative gestational-week sampling and delivery definitions. |
+| `#CL_model_construction_and_evaluation.py`          | Workflow for evaluating the model with cervical-length measurements. |
+| `jackknifing.py`                                    | Jackknife and differential-expression utilities.             |
+| `EN.R`                                              | Elastic-net model selection and leave-one-out evaluation in R. |
+| `elbow_point.py`                                    | Knee/elbow-point analysis for selecting the number of proteins. |
+| `UMAP.py`                                           | UMAP visualization of proteomic profiles.                    |
+| `composite_score_function.py`                       | Composite ranking function for candidate protein prioritization. |
+| `LICENSE`                                           | Repository license.                                          |
+
+Using the fitted model
+
+The fitted model can be loaded with `joblib`:
+
+```python
+import joblib
+
+model = joblib.load("model/LR_final.pkl")
+```
+
+Data availability
+
+Primary proteomics data are available through the iProX repository under accession `IPX0008492002` 
+
+
+
+## Contact
+
+For questions about the code or model, please contact the corresponding author listed in the associated manuscript.
