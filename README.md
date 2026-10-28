@@ -51,3 +51,9 @@ Primary proteomics data are available through the iProX repository under accessi
 ## Contact
 
 For questions about the code or model, please contact the corresponding author listed in the associated manuscript.
+
+
+
+# License
+
+This project is covered under the **GNU GENERAL PUBLIC LICENSE Version 3**.
